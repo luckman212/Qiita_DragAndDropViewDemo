@@ -143,7 +143,6 @@ class DragAndDropView: NSView {
         }
         
         // 画像のURL(http://~)がドラッグされた場合
-        // 必要無いかも？
         if let urls = pasteBoard.readObjects(forClasses: [NSURL.self], options: nil) as? [URL],
             urls.count > 0 {
             var draggedImages = [DraggedImage]()
