@@ -30,8 +30,7 @@ class ViewController: NSViewController {
 extension ViewController: DragAndDropViewDelegate {
     func dragAndDropView(_ view: DragAndDropView, didDragImageFileURLs draggedImages: [DraggedImage]) {
         for draggedImage in draggedImages {
-            print(draggedImage)
+            print("\(draggedImage.url?.lastPathComponent), \(draggedImage.uti)")
         }
     }
-    
 }
